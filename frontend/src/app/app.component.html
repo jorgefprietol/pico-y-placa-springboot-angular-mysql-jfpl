@@ -1,0 +1,30 @@
+<style>
+
+  .content {
+    display: grid;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+  }
+
+</style>
+
+<app-header></app-header>
+
+<div class="content" role="main">
+
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+      <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+</div>
+<app-footer></app-footer>

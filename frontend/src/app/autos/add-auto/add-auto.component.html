@@ -1,0 +1,41 @@
+        <!-- Resources -->
+        <div class="content" role="main" style="text-align:center ;">
+          <h2>REGISTRO DE INFORMACION DE AUTOS </h2>
+          <p>Ingresar información de Auto:</p>
+
+          <form [formGroup]="addAutoForm" (submit)="addAuto()" class="example-form">
+
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Placa</mat-label>
+                <input matInput placeholder="Ingresar Placa" formControlName="placa">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Marca</mat-label>
+                <input matInput placeholder="Ingresar Marca" formControlName="marca">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Modelo</mat-label>
+                <input matInput placeholder="Ingresar Modelo" formControlName="modelo">
+              </mat-form-field></td>
+              </tr>
+              <tr>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Chasis</mat-label>
+                <input matInput placeholder="Ingresar Chasis" formControlName="chasis">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Color</mat-label>
+                <input matInput placeholder="Ingresar Color" formControlName="color">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Serial Motor</mat-label>
+                <input matInput placeholder="Ingresar Serial Motor" formControlName="serialmotor">
+              </mat-form-field></td>
+            </tr></table>
+            <button mat-raised-button color="primary">Guardar</button>
+            <button mat-raised-button color="primary"><a href="autos/list">Cancel</a></button>
+          </form>
+
+        </div>
+

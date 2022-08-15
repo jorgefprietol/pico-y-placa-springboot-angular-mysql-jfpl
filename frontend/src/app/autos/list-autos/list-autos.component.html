@@ -1,0 +1,49 @@
+
+        <!-- Next Steps -->
+        <div style="color: aliceblue ; margin: 20px; padding: 20px;">
+          <div class="content2" role="main">
+            <h2>CONSULTAR AUTO - HOY NO CIRCULA </h2>
+            <p>Ingresar Placa y Fecha Actual</p>
+
+            <form [formGroup]="validarAutoForm"  (submit)="validarAuto()" class="example-form">
+
+              <table cellspacing="0"><tr>
+                <td><mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Placa</mat-label>
+                  <input matInput placeholder="Ingresar Placa" formControlName="placa" required>
+                </mat-form-field></td>
+                <td><mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Fecha</mat-label>
+                  <input matInput placeholder="Ingresar Fecha" formControlName="fecha" type="date" id="start" name="trip-start"
+                  [min]="{minDate}" required datetime="dd-MM-yyyy">
+                </mat-form-field></td>
+                <td><mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Hora</mat-label>
+                  <input matInput placeholder="Ingresar Hora" formControlName="hora" type="time" id="appt" name="appt"
+                  min="06:00" max="21:00" required>
+                </mat-form-field></td>
+              </tr></table>
+              <button mat-raised-button color="primary">Consultar Hoy No Circula</button>
+            </form>
+
+          </div>
+
+          <h2>AUTOS REGISTRADOS - HOY NO CIRCULA </h2>
+          <p>Detalle de Autos registrados</p>
+            <mat-table #table [dataSource]="dataSource" matSort>
+              <ng-container matColumnDef="{{column.id}}" *ngFor="let column of columnNames">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> {{column.value}}</mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{ column.id !== 'edit' && column.id !== 'delete' && column.id !== 'view' ? element[column.id] : '' }}
+                  <a *ngIf="column.id === 'view'" href="{{'autos/view/' + element[column.id] }}">Ver</a>
+                  <a *ngIf="column.id === 'edit'" href="{{'autos/edit/' + element[column.id] }}">Edit</a>
+                  <span *ngIf="column.id === 'delete'" (click)="mostrarDialogo(element[column.id])"><a>Del</a></span>
+                </mat-cell>
+              </ng-container>
+
+              <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+              <mat-row *matRowDef="let row; columns: displayedColumns;">22</mat-row>
+            </mat-table>
+
+        </div>
+
+

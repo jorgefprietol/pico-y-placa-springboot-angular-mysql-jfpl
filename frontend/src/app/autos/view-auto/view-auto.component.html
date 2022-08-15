@@ -1,0 +1,39 @@
+        <!-- Resources -->
+        <div class="content" role="main">
+          <h2>DETALLE INFORMACION DEL AUTO </h2>
+          <p>Ver la información del Auto:</p>
+
+          <form class="example-form">
+
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Placa</mat-label>
+                <input matInput placeholder="Ingresar Placa" value="{{viewAutos.placa}}" readonly="readonly">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Marca</mat-label>
+                <input matInput placeholder="Ingresar Marca" value="{{viewAutos.marca}}"  readonly="readonly">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Modelo</mat-label>
+                <input matInput placeholder="Ingresar Modelo" value="{{viewAutos.modelo}}"  readonly="readonly">
+              </mat-form-field></td>
+              </tr>
+              <tr>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Color</mat-label>
+                <input matInput placeholder="Ingresar Color" value="{{viewAutos.color}}"  readonly="readonly">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Chasis</mat-label>
+                <input matInput placeholder="Ingresar Chasis" value="{{viewAutos.chasis}}"  readonly="readonly">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Serial Motor</mat-label>
+                <input matInput placeholder="Ingresar Serial Motor" value="{{viewAutos.serialmotor}}"  readonly="readonly">
+              </mat-form-field></td>
+            </tr></table>
+            <button mat-raised-button color="primary"><a href="autos/list">Cancel</a></button>
+          </form>
+
+        </div>

@@ -1,0 +1,40 @@
+        <!-- Resources -->
+        <div *ngIf="dataLoaded" class="content" role="main" style="text-align:center ;">
+          <h2>EDITAR LA INFORMACION DEL AUTO </h2>
+          <p>Actualizar la información del Auto:</p>
+
+          <form [formGroup]="editAutoForm" (submit)="editAuto()" class="example-form">
+
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Id</mat-label>
+                <input matInput placeholder="Ingresar Id" formControlName="idauto" readonly>
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Placa</mat-label>
+                <input matInput placeholder="Ingresar Placa" formControlName="placa">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Marca</mat-label>
+                <input matInput placeholder="Ingresar Marca" formControlName="marca">
+              </mat-form-field></td>
+            </tr>
+            <tr>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Modelo</mat-label>
+                <input matInput placeholder="Ingresar Modelo" formControlName="modelo">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Chasis</mat-label>
+                <input matInput placeholder="Ingresar Chasis" formControlName="chasis">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Color</mat-label>
+                <input matInput placeholder="Ingresar Color" formControlName="color">
+              </mat-form-field></td>
+            </tr></table>
+            <button mat-raised-button color="primary">Guardar</button>
+            <button mat-raised-button color="primary"><a href="autos/list">Cancel</a></button>
+          </form>
+
+        </div>
