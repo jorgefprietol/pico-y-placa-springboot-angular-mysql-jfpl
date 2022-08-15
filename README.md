@@ -1,6 +1,6 @@
 # Java (Spring Boot) y Angular
 
-Clonar el repo https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/tree/master
+Clonar el repo https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl
 
 # 1. crear base de datos nombreBD: springboot, usuario:root, password:
 # 2. ejecutar en la ubicacion pico-y-placa-springboot-angular-mysql-jfpl/backend/target java -jar backend-0.1-SNAPSHOT.jar   
