@@ -16,7 +16,8 @@ Clonar el repo https://github.com/jorgefprietol/pico-y-placa-springboot-angular-
 			}
 		get http://localhost:8080/auto/query?placa=PDI-6863&fecha=13-09-2022&hora=08:59  (Feriados configurados "23-08-2022,16-08-2022,06-09-2022")
 		Ver las siguientes pantallas:
-		![Image text]([https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg](https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/principal-consultaPlaca-crud.jpg))
+		![alt text](https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg](https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/principal-consultaPlaca-crud.jpg)
+		![Image text](https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg](https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/principal-consultaPlaca-crud.jpg)
 
 # 3. Ejecutar en la ubicacion pico-y-placa-springboot-angular-mysql-jfpl/frontend npm install, ng build frontend y luego ng serve frontend
 		http://localhost:4200/autos/list
