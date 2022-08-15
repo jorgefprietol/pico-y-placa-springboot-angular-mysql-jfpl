@@ -1,6 +1,6 @@
 # Java (Spring Boot) y Angular
 
-Clonar el repo https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl
+Clonar el repo https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/tree/master
 
 # 1. crear base de datos nombreBD: springboot, usuario:root, password:
 # 2. ejecutar en la ubicacion pico-y-placa-springboot-angular-mysql-jfpl/backend/target java -jar backend-0.1-SNAPSHOT.jar   
@@ -16,16 +16,20 @@ Clonar el repo https://github.com/jorgefprietol/pico-y-placa-springboot-angular-
 			}
 		get http://localhost:8080/auto/query?placa=PDI-6863&fecha=13-09-2022&hora=08:59  (Feriados configurados "23-08-2022,16-08-2022,06-09-2022")
 		Ver las siguientes pantallas:
-	
-  <img src="https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/registro-autos.jpg" width="350" title="hover text">
-  <img src="https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/principal-consultaPlaca-crud.jpg" width="350" alt="accessibility text">
-    <img src="https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/resultado-fecha-anterior-actual.jpg" width="350" alt="accessibility text">
-        <img src="https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/resultado-feriado.jpg" width="350" alt="accessibility text">
-	 <img src="https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/resultado-no-circula.jpg" width="350" alt="accessibility text">
-	 	 <img src="https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/resultado-no-registrado.jpg" width="350" alt="accessibility text">
-		 	 	 <img src="https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/resultado-si-circula-930-1600.jpg" width="350" alt="accessibility text">
-</p>
-# 3. Ejecutar en la ubicacion pico-y-placa-springboot-angular-mysql-jfpl/frontend npm install, ng build frontend y luego ng serve frontend
+
+# 3. Ejecutar en la ubicacion pico-y-placa-springboot-angular-mysql-jfpl/frontend npm install, 
+		cambiar estos valores:
+		                {
+                  "type": "initial",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
+                }
+		ng build frontend y luego ng serve frontend
 		http://localhost:4200/autos/list
 
 
