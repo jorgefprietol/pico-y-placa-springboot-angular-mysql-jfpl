@@ -18,7 +18,10 @@ Clonar el repo https://github.com/jorgefprietol/pico-y-placa-springboot-angular-
 		Ver las siguientes pantallas:
 		![alt text](https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/principal-consultaPlaca-crud.jpg?raw=true)
 		![Image text](https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/principal-consultaPlaca-crud.jpg?raw=true)
-
+	
+  <img src="https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/principal-consultaPlaca-crud.jpg" width="350" title="hover text">
+  <img src="https://github.com/jorgefprietol/pico-y-placa-springboot-angular-mysql-jfpl/blob/master/img/principal-consultaPlaca-crud.jpg" width="350" alt="accessibility text">
+</p>
 # 3. Ejecutar en la ubicacion pico-y-placa-springboot-angular-mysql-jfpl/frontend npm install, ng build frontend y luego ng serve frontend
 		http://localhost:4200/autos/list
 
